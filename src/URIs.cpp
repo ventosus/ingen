@@ -30,6 +30,7 @@
 #include "lv2/lv2plug.in/ns/ext/resize-port/resize-port.h"
 #include "lv2/lv2plug.in/ns/ext/time/time.h"
 #include "lv2/lv2plug.in/ns/ext/worker/worker.h"
+#include "lv2/lv2plug.in/ns/ext/state/state.h"
 #include "lv2/lv2plug.in/ns/lv2core/lv2.h"
 
 namespace Ingen {
@@ -182,6 +183,7 @@ URIs::URIs(Forge& f, URIMap* map, LilvWorld* lworld)
 	, time_frame            (forge, map, lworld, LV2_TIME__frame)
 	, time_speed            (forge, map, lworld, LV2_TIME__speed)
 	, work_schedule         (forge, map, lworld, LV2_WORKER__schedule)
+	, state_loadDefaultState(forge, map, lworld, LV2_STATE__loadDefaultState)
 {}
 
 } // namespace Ingen

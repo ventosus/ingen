@@ -200,6 +200,7 @@ public:
 	const Quark time_frame;
 	const Quark time_speed;
 	const Quark work_schedule;
+	const Quark state_loadDefaultState;
 };
 
 inline bool operator==(const Atom& a, const URIs::Quark& b) {
